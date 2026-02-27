@@ -8,7 +8,12 @@
 
 /* Hilangkan cursor asli saat di area website */
 body {
-    cursor: none;
+transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+/* Biar kursor tetap kelihatan di background hitam */
+#cursor {
+    mix-blend-mode: difference;
 }
 
 /* Transisi halus untuk navigasi */

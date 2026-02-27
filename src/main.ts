@@ -85,3 +85,36 @@ parallaxImages.forEach((img) => {
     });
 });
 
+// 6. Animasi Reveal & Color Switch untuk Section About
+const aboutSection = document.querySelector('#about');
+const aboutText = document.querySelector('.about-text');
+
+if (aboutSection && aboutText) {
+    // Reveal Teks saat di-scroll
+    gsap.to(aboutText, {
+        scrollTrigger: {
+            trigger: "#about",
+            start: "top 70%", // Mulai saat section 70% terlihat
+        },
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power4.out"
+    });
+
+    // Perubahan Warna Background (Dark Mode Trigger)
+    ScrollTrigger.create({
+        trigger: "#about",
+        start: "top center",
+        end: "bottom center",
+        onEnter: () => {
+            gsap.to("body", { backgroundColor: "#000000", color: "#f2f2f2", duration: 0.8 });
+            gsap.to(cursor, { backgroundColor: "#ffffff", duration: 0.5 }); // Cursor jadi putih
+        },
+        onLeaveBack: () => {
+            gsap.to("body", { backgroundColor: "#f2f2f2", color: "#1a1a1a", duration: 0.8 });
+            gsap.to(cursor, { backgroundColor: "#000000", duration: 0.5 }); // Cursor balik hitam
+        }
+    });
+}
+

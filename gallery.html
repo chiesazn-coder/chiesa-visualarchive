@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Visual Archive</title>
+</head>
+<body class="bg-[#f2f2f2] text-[#1a1a1a] selection:bg-black selection:text-white overflow-x-hidden">
+    
+    <div id="cursor" class="fixed top-0 left-0 w-4 h-4 bg-black rounded-full pointer-events-none z-[9999] hidden md:block"></div>
+
+    <nav class="p-8 md:p-16 flex justify-between items-start">
+        <a href="/" class="text-sm uppercase tracking-widest font-medium hover:italic transition-all group">
+            <span class="text-[10px] align-top mr-1 group-hover:mr-2 transition-all">01/</span>Back to Home
+        </a>
+        <ul class="flex gap-x-12 text-sm font-medium uppercase tracking-widest">
+            <li class="italic underline underline-offset-4 decoration-1"><span class="text-[10px] align-top mr-1">02/</span>Gallery</li>
+            <li class="opacity-40 hover:opacity-100 transition-opacity cursor-pointer"><span class="text-[10px] align-top mr-1">03/</span>Journal</li>
+            <li class="opacity-40 hover:opacity-100 transition-opacity"><a href="/#about"><span class="text-[10px] align-top mr-1">04/</span>About</a></li>
+        </ul>
+    </nav>
+
+    <main class="px-8 md:px-16 pb-32">
+        <header class="mb-20">
+            <h1 class="text-[clamp(3rem,10vw,8rem)] font-medium tracking-tighter uppercase leading-none">Selected Works</h1>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-10">
+            
+            <a href="/photo-detail.html?id=prau-series" class="gallery-item group cursor-none block">
+                <div class="overflow-hidden aspect-video md:aspect-[4/3] bg-zinc-200">
+                    <img src="/prau-1.jpg" alt="Mount Prau Series" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                </div>
+                <div class="mt-4 flex justify-between text-[10px] uppercase font-bold tracking-widest">
+                    <span>01/ Mount Prau Series</span>
+                    <span class="opacity-0 group-hover:opacity-100 transition-opacity">View Series →</span>
+                </div>
+            </a>
+            
+        </div>
+    </main>
+
+    <script type="module" src="/src/gallery.ts"></script>
+</body>
+</html>

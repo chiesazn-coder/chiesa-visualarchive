@@ -6,9 +6,21 @@
     will-change: clip-path;
 }
 
+#preloader {
+    pointer-events: all;
+}
+
+.loader-text {
+    display: block;
+    transform: translateY(100%);
+}
+
 /* Hilangkan cursor asli saat di area website */
 body {
-transition: background-color 0.8s ease, color 0.8s ease;
+/* Transisi halus untuk perubahan warna */
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+              color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: none; /* Menyembunyikan kursor asli */
 }
 
 /* Biar kursor tetap kelihatan di background hitam */
@@ -20,6 +32,19 @@ transition: background-color 0.8s ease, color 0.8s ease;
 nav li:hover {
     letter-spacing: 0.1em;
 }
+
+/* Pastikan link tidak merubah warna teks */
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-line {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+
 
 /* Menghilangkan custom cursor di perangkat layar sentuh */
 @media (hover: none) and (pointer: coarse) {

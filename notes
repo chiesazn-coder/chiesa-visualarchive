@@ -1,0 +1,19 @@
+            <a href="/photo-detail.html?id=prau-series" class="gallery-item group cursor-none block">
+                <div class="overflow-hidden aspect-video md:aspect-[4/3] bg-zinc-200">
+                    <img src="/prau-2.jpg" alt="Landscape View Wonosobo" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                </div>
+                <div class="mt-4 flex justify-between text-[10px] uppercase font-bold tracking-widest">
+                    <span>02/ Prau Landscapes</span>
+                    <span class="opacity-0 group-hover:opacity-100 transition-opacity">View Series →</span>
+                </div>
+            </a>
+
+            <a href="/photo-detail.html?id=prau-series" class="gallery-item group cursor-none block">
+                <div class="overflow-hidden aspect-video md:aspect-[4/3] bg-zinc-200">
+                    <img src="/prau-3.jpg" alt="Morning Mist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                </div>
+                <div class="mt-4 flex justify-between text-[10px] uppercase font-bold tracking-widest">
+                    <span>03/ Morning Mist</span>
+                    <span class="opacity-0 group-hover:opacity-100 transition-opacity">View Series →</span>
+                </div>
+            </a>

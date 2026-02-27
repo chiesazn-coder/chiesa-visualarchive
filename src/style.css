@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Pastikan clip-path awal tertutup untuk animasi reveal */
+.featured-image-wrapper {
+    clip-path: inset(100% 0 0 0);
+    will-change: clip-path;
+}
+
+/* Hilangkan cursor asli saat di area website */
+body {
+    cursor: none;
+}
+
+/* Transisi halus untuk navigasi */
+nav li:hover {
+    letter-spacing: 0.1em;
+}

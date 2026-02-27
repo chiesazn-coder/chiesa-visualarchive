@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiesa | Visual Archive</title>
+</head>
+<body class="bg-[#f2f2f2] text-[#1a1a1a] selection:bg-black selection:text-white overflow-x-hidden">
+    
+    <div id="cursor" class="fixed top-0 left-0 w-4 h-4 bg-black rounded-full pointer-events-none z-[9999] hidden md:block origin-center"></div>
+
+    <main class="min-h-screen p-8 md:p-16 flex flex-col justify-between relative">
+        
+        <section class="flex flex-col md:flex-row justify-between items-start gap-10">
+            <div class="header-text">
+                <h1 class="title-reveal text-[clamp(4rem,12vw,15rem)] leading-[0.85] font-medium tracking-tighter">
+                    Visual<br>Archive
+                </h1>
+            </div>
+            <div class="text-[clamp(2rem,6vw,8rem)] font-light leading-none">
+                (12)
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end mt-20 md:mt-0">
+            <nav class="md:col-span-6 mb-10 md:mb-0">
+                <ul class="flex flex-wrap gap-x-12 gap-y-4 text-sm font-medium uppercase tracking-widest">
+                    <li class="hover:italic cursor-pointer transition-all"><span class="text-[10px] align-top mr-1">01/</span>Home</li>
+                    <li class="hover:italic cursor-pointer transition-all"><span class="text-[10px] align-top mr-1">02/</span>Projects</li>
+                    <li class="hover:italic cursor-pointer transition-all"><span class="text-[10px] align-top mr-1">03/</span>Journal</li>
+                    <li class="hover:italic cursor-pointer transition-all"><span class="text-[10px] align-top mr-1">04/</span>About</li>
+                </ul>
+            </nav>
+
+            <div class="md:col-span-6 featured-image-wrapper relative aspect-[4/5] md:aspect-square overflow-hidden group">
+                <img src="/prau-1.jpg" 
+                    alt="Chiesa Photography Karya 01" 
+                    class="reveal-img w-full h-full object-cover scale-125 grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+        </section>
+
+        <footer class="mt-20 md:mt-0">
+            <p class="text-xl md:text-2xl leading-tight font-medium max-w-sm">
+                Focused on real,<br>Powerful moments
+            </p>
+            <div class="mt-8 md:absolute md:bottom-16 md:right-16 text-sm uppercase tracking-widest font-bold rotate-90 origin-right hidden md:block">
+                Scroll ↓
+            </div>
+        </footer>
+    </main>
+
+    <section class="mt-32 px-8 md:px-16 pb-32">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+          
+          <div class="md:col-span-7 group overflow-hidden">
+              <div class="parallax-container h-[60vh] md:h-[80vh] overflow-hidden relative">
+                  <img src="/prau-2.jpg" class="parallax-img w-full h-[120%] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000">
+              </div>
+              <div class="mt-4 flex justify-between uppercase text-xs tracking-widest font-bold">
+                  <span>01/ Landscape</span>
+                  <span>Prau, Wonosobo</span>
+              </div>
+          </div>
+
+          <div class="md:col-span-4 md:col-start-9 mt-20 group overflow-hidden">
+              <div class="parallax-container h-[40vh] md:h-[60vh] overflow-hidden relative">
+                  <img src="/prau-3.jpg" class="parallax-img w-full h-[120%] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000">
+              </div>
+              <div class="mt-4 flex justify-between uppercase text-xs tracking-widest font-bold">
+                  <span>02/ Portrait</span>
+                  <span>Prau, 2024</span>
+              </div>
+          </div>
+
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

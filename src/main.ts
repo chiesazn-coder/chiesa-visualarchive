@@ -84,3 +84,4 @@ parallaxImages.forEach((img) => {
         }
     });
 });
+

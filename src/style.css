@@ -15,3 +15,13 @@ body {
 nav li:hover {
     letter-spacing: 0.1em;
 }
+
+/* Menghilangkan custom cursor di perangkat layar sentuh */
+@media (hover: none) and (pointer: coarse) {
+  #cursor {
+    display: none !important;
+  }
+  body {
+    cursor: auto !important;
+  }
+}
